@@ -119,3 +119,42 @@ TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone4/temp
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+#SHRP-specific lines
+SHRP_PATH := device/xiaomi/begonia
+SHRP_MAINTAINER := SHADOW
+SHRP_DEVICE_CODE := begonia
+SHRP_OFFICIAL := false
+SHRP_EDL_MODE := 1
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_FLASH_MAX_BRIGHTNESS := 2074
+SHRP_REC_TYPE := SAR
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_DEVICE_TYPE := A_Only
+SHRP_EXPRESS := true
+SHRP_EXPRESS_USE_DATA := true
+SHRP_DARK := true
+SHRP_NOTCH := true
+INC_IN_REC_ADDON_1 := true
+INC_IN_REC_ADDON_2 := true
+INC_IN_REC_ADDON_3 := true
+INC_IN_REC_ADDON_4 := true
+INC_IN_REC_MAGISK := true
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/class/leds/torch-light0/brightness
+SHRP_FONP_2 := /sys/class/leds/torch-light1/brightness
+SHRP_FONP_3 := /sys/class/leds/torch-light2/brightness
+#SHRP_STATUSBAR_RIGHT_PADDING := <1-XXX>
+#SHRP_STATUSBAR_LEFT_PADDING := <1-XXX>
+
+#SHRP Addons
+#SHRP_EXTERNAL_ADDON_PATH := "$(DEVICE_PATH)/addons/"
+#SHRP_EXTERNAL_ADDON_1_NAME := "LOS Recorder"
+#SHRP_EXTERNAL_ADDON_1_INFO := "A magisk module which add lineageOS recorder into your system"
+#SHRP_EXTERNAL_ADDON_1_FILENAME := "los_recorder.zip"
+#SHRP_EXTERNAL_ADDON_1_BTN_TEXT := "Install"
+#SHRP_EXTERNAL_ADDON_1_SUCCESSFUL_TEXT := "Installed"
+#SHRP_INC_IN_REC_EXTERNAL_ADDON_1 := true
